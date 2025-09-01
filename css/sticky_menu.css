@@ -1,0 +1,65 @@
+.sticky_menu{
+    display:none;
+   
+      height:100px;
+}
+
+.navigation-card {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ background-color: #222845;
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+z-index:999;
+
+
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(252, 252, 252);
+  padding: 0px 15px;
+ 
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.tab:hover {
+  background-color: rgb(227, 223, 223);
+}
+
+/*  */
+
+p{
+  font-size: 12px;
+  text-align:center;
+  margin-bottom:0px;
+  
+}
+
+
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  
+  .sticky_menu{
+      display:inline;
+  }
+  
+  .site-footer{
+      display:none !important;
+  }
+}
+
+
