@@ -17,7 +17,7 @@ if(isset($_SESSION['blog_id']))
    $stmt_district = $conn->prepare("SELECT district_name FROM district WHERE district_id=".$row_blog[0]['district_id']);
     $stmt_district->execute();
     $row_district = $stmt_district->fetchAll(PDO::FETCH_ASSOC);
-}
+} 
 else
 {
     echo '<script>alert("Blog not found. Redirecting to Home Page.");window.location.href = "home";</script>';
