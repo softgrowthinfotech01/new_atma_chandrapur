@@ -11,7 +11,7 @@ require_once "conn.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> ATMA </title>
     <!-- favicons Icons -->
-   
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -51,14 +51,14 @@ require_once "conn.php";
 
     <style>
         .card_tal {
-text-align: center;
-  align-content: center;
-  background: aliceblue;
-  border-radius: 10px 0px 10px 10px;
-  margin: 10px 0 !important;
-  padding: 25px 0;
-  box-shadow: 2px 3px 6px 0px black;
-}
+            text-align: center;
+            align-content: center;
+            background: aliceblue;
+            border-radius: 10px 0px 10px 10px;
+            margin: 10px 0 !important;
+            padding: 25px 0;
+            box-shadow: 2px 3px 6px 0px black;
+        }
     </style>
 </head>
 
@@ -66,21 +66,15 @@ text-align: center;
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
-
-
-
-
-
-   
     <!-- /.preloader -->
 
-<?php include_once "header.php";?>
+    <?php include_once "header.php"; ?>
     <!-- /.page-wrapper -->
 
 
-  <section class="product">
-            <div class="container py-5">
-                <!-- <div class="row">
+    <section class="product">
+        <div class="container py-5">
+            <!-- <div class="row">
                     <div class="col-xl-3 col-lg-3">
                         <div class="product__sidebar">
                             <div class="shop-search product__sidebar-single">
@@ -103,96 +97,103 @@ text-align: center;
                            
                         </div>
                     </div>-->
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="product__items">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="product__showing-result">
-                                     <h2>Talukas</h2>
-                                       
-                                    </div>
-                                    <div class="main-menu__search-cart-btn-box">
-                                                <div class="main-menu__search-box">
-                                                    <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                                                       
-                                                </div>
+            <div class="col-xl-12 col-lg-12">
+                <div class="product__items">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="product__showing-result">
+                                <h2>Talukas</h2>
 
-                                            </div>
-                                </div>
                             </div>
-                            <div class="product__all" >
-                                <div class="row" >
-                                    <!--Product All Single Start-->
-                                    <?php
-                                    $stmt_city_list = $conn->prepare("SELECT d.district_name,d.district_id,b.blog_status,COUNT(b.blog_id) AS count_blog_districtwise FROM district d LEFT JOIN blog b ON d.district_id=b.district_id where b.blog_status=1 OR b.blog_status is null group by d.district_id ORDER BY district_name ASC; ");
-                                    $stmt_city_list->execute();
-                                    $row_city_list = $stmt_city_list->fetchAll(PDO::FETCH_ASSOC);
-                                    for($r=0;$r<count($row_city_list);$r++) 
-                                    {
-                                        ?>
-                                        <!-- <div class="col-xl-2 col-lg-2 col-md-3" onclick="startsession('district_id',<?php
-                                        //  echo $row_city_list[$r]['district_id'];?>)">
+                            <div class="main-menu__search-cart-btn-box">
+                                <div class="main-menu__search-box">
+                                    <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__all">
+                        <div class="row justify-content-center">
+                            <!--Product All Single Start-->
+                            <?php
+                            $stmt_city_list = $conn->prepare("SELECT d.district_name,d.district_id,b.blog_status,COUNT(b.blog_id) AS count_blog_districtwise FROM district d LEFT JOIN blog b ON d.district_id=b.district_id where b.blog_status=1 OR b.blog_status is null group by d.district_id ORDER BY district_name ASC; ");
+                            $stmt_city_list->execute();
+                            $row_city_list = $stmt_city_list->fetchAll(PDO::FETCH_ASSOC);
+                            for ($r = 0; $r < count($row_city_list); $r++) {
+                            ?>
+                                <!-- <div class="col-xl-2 col-lg-2 col-md-3" onclick="startsession('district_id',<?php
+                                                                                                                    //  echo $row_city_list[$r]['district_id'];
+                                                                                                                    ?>)">
                                             <div class="product__all-single">
                                                 <div class="product__all-img-box" >
                                                     <div class="product__all-img m-3" style="background: linear-gradient(to bottom right, #070630 0%,#060454 100%);color:#fff;box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;">
-                                                       <p class="p-4 text-light " style="white-space: nowrap;"><?php 
-                                                    //    echo $row_city_list[$r]['district_name'];?></p>
+                                                       <p class="p-4 text-light " style="white-space: nowrap;"><?php
+                                                                                                                //    echo $row_city_list[$r]['district_name'];
+                                                                                                                ?></p>
                                                         <span class="product__all-sale"><?php
-                                                        //  echo $row_city_list[$r]['count_blog_districtwise'];?></span>
+                                                                                        //  echo $row_city_list[$r]['count_blog_districtwise'];
+                                                                                        ?></span>
                                                        
                                                     </div>
                                                 </div>
                                                 
                                             </div>
                                         </div> -->
-                                        <div class="col-xl-2 col-lg-2 col-md-3 card_tal"  onclick="startsession('district_id',<?php echo $row_city_list[$r]['district_id'];?>)">
-                                            <button type="button" class="btn btn-success position-relative">
-  <?php echo $row_city_list[$r]['district_name'];?>
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    <?php echo $row_city_list[$r]['count_blog_districtwise'];?>
-    <span class="visually-hidden">Total Blogs</span>
-  </span>
-</button>
-                                        </div>
-                                        <?php
-                                    }
-                                    ?>
-
-                                     <!-- template js -->
-    <script src="js/agrion.js"></script>
-    
-                                    <script>
-                                    function startsession(name,value)
-                                    {
-                                       // alert(name);
-                                       // alert(value);
-                                        $.ajax({
-                                          url: "createsession.php",
-                                          method:'POST',
-                                          data: {name: name, value: value},
-                                          success: function(data){
-                                             window.location.href = "blog";
-                                          }
-                                       });
-                                    }
-                                    </script>
-                                    <!--Product All Single End-->
+                                <div class="col-xl-3 col-lg-2 col-md-3 " onclick="startsession('district_id',<?php echo $row_city_list[$r]['district_id']; ?>)">
+                                    <div class="card_tal">
+                                        <button type="button" class="btn btn-success position-relative">
+                                            <?php echo $row_city_list[$r]['district_name']; ?>
+                                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                <?php echo $row_city_list[$r]['count_blog_districtwise']; ?>
+                                                <span class="visually-hidden">Total Blogs</span>
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            
+                            <?php
+                            }
+                            ?>
+
+                            <!-- template js -->
+                            <script src="js/agrion.js"></script>
+
+                            <script>
+                                function startsession(name, value) {
+                                    // alert(name);
+                                    // alert(value);
+                                    $.ajax({
+                                        url: "createsession.php",
+                                        method: 'POST',
+                                        data: {
+                                            name: name,
+                                            value: value
+                                        },
+                                        success: function(data) {
+                                            window.location.href = "blog";
+                                        }
+                                    });
+                                }
+                            </script>
+                            <!--Product All Single End-->
                         </div>
                     </div>
+
                 </div>
             </div>
-        </section>
+        </div>
+        </div>
+    </section>
     <!-- /.mobile-nav__wrapper -->
-    <?php 
-    // require_once "search_box.php";?>
-    <?php include_once "footer.php";?>
-        <!-- /.search-popup -->
+    <?php
+    // require_once "search_box.php";
+    ?>
+    <?php include_once "footer.php"; ?>
+    <!-- /.search-popup -->
 
 
-      <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -219,8 +220,9 @@ text-align: center;
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
 
-   
+
 </body>
 
 <!-- Mirrored from layerdrops.com/agrionhtml/main-html/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Jun 2023 06:04:57 GMT -->
+
 </html>
