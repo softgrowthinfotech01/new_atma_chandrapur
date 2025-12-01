@@ -87,7 +87,7 @@ else
 <style>
     /* From Uiverse.io by alexmaracinaru */ 
 .card {
-  width: 190px;
+  width: 250px;
   background: white;
   padding: .4em;
   border-radius: 6px;
@@ -130,7 +130,6 @@ else
   color: gray;
   font-weight: 400;
   font-size: 11px;
-  padding-top: 20px;
 }
 
 .name {
@@ -209,8 +208,8 @@ else
                         </div>
                     </div> -->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow py-3 fadeInUp" data-wow-delay="100ms"  onclick="startsession('blog_id',<?php echo $r['blog_id'];?>)">
-                        <!-- From Uiverse.io by alexmaracinaru --> 
-<div class="card">
+       
+<div class="card  mx-auto">
     <div class="card-image">
         <img src="uploaded_images/blog_title_images/<?php echo $r['blog_title_image'];?>" alt="image" class="w-100 h-100">
     </div>
