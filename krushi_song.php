@@ -1,5 +1,5 @@
 
-<?php $active ='Photos'; ?>
+<?php $active ='Taluka Farmer'; ?>
 
 <!DOCTYPE html>
 <html lang="mar">
@@ -23,7 +23,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
 	<link rel="stylesheet" href="css/footer-slider.css">
 	<!-- PAGE TITLE HERE -->
-	<title>छायाचित्र | आत्मा चंद्रपूर </title>
+	<title>कृषिगीत | आत्मा चंद्रपूर </title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,48 +48,23 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 	<style>
- #content {
-      width: 100%;
-      height: 300px;
-      box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      z-index: 1;
-      display: block;
-      background-color: white;
-      border-radius: 15px;
-    }
 
-    
-  .my-land-card {
-    background: #fff;
-    border-radius: 10px;
+        #content {
+    width: 100%;     
+    height: 300px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    border: 1px solid #ddd;
-    transition: 0.3s ease;
-  }
+    z-index: 1;
+    display: block;
+    background-color: white;
+    border-radius: 15px;
 
-  .my-land-card:hover {
-    transform: translateY(-4px);
-  }
 
-  .my-land-img {
-    width: 100%;
-    height: 250px;  
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
-    object-fit: cover;
-  }
+}
 
-  .my-land-body {
-    padding: 12px 15px;
-  }
-
-  .my-land-text {
-    font-size: 14px;
-    margin: 0;
-    line-height: 1.5;
-  }
-
+.bg-faint-dark {
+  background-color: #444 !important; 
+}
 
     </style>
 </head>
@@ -101,100 +76,23 @@
 	require_once "header.php";
 ?>
    		
-<!-- Header Section -->
-<section id="inner-headline" class="py-4" style="background-color:#3e464c;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="text-white m-0">छायाचित्र</h2>
-      </div>
-    </div>
-  </div>
-</section>
+         <!-- heading -->
 
-
-<!-- Custom Landscape Cards -->
-<div class="container my-5">
-  <div class="row g-4">
-
-    <!-- Landscape Card -->
-    <div class="col-12 col-sm-6 col-lg-4">
-      <div class="my-land-card shadow-sm">
-        <img src="https://insuranceblog.accenture.com/wp-content/uploads/2018/01/Agriculture.jpg" class="my-land-img" alt="" />
-        <div class="my-land-body">
-          <p class="my-land-text">
-            Some quick example text to build on the card title. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit dolor, illo pariatur animi officia voluptatum perspiciatis dignissimos hic dolorem dolorum quas cumque cum aut voluptate facilis ipsam adipisci, rem, veniam qui nam mollitia facere in recusandae. Iusto maxime, sapiente quia neque ullam temporibus nostrum quas ab aliquid. Explicabo, adipisci!
-          </p>
+    <section id="inner-headline"  class=" py-4" style="background-color:#3e464c;">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-12">
+             <h2 class=" text-white start m-0">
+             कृषिगीत
+             </h2>
+            </div>
+           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-12 col-sm-6 col-lg-4">
-      <div class="my-land-card shadow-sm">
-        <img src="https://insuranceblog.accenture.com/wp-content/uploads/2018/01/Agriculture.jpg" class="my-land-img" alt="" />
-        <div class="my-land-body">
-          <p class="my-land-text">
-            Another sample text for the next card.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-12 col-sm-6 col-lg-4">
-      <div class="my-land-card shadow-sm">
-        <img src="https://insuranceblog.accenture.com/wp-content/uploads/2018/01/Agriculture.jpg" class="my-land-img" alt="" />
-        <div class="my-land-body">
-          <p class="my-land-text">
-            Additional content text goes here.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- card 4 -->
-    <div class="col-12 col-sm-6 col-lg-4">
-      <div class="my-land-card shadow-sm">
-        <img src="https://insuranceblog.accenture.com/wp-content/uploads/2018/01/Agriculture.jpg" class="my-land-img" alt="" />
-        <div class="my-land-body">
-          <p class="my-land-text">Row two card example.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="col-12 col-sm-6 col-lg-4">
-      <div class="my-land-card shadow-sm">
-        <img src="https://insuranceblog.accenture.com/wp-content/uploads/2018/01/Agriculture.jpg" class="my-land-img" alt="" />
-        <div class="my-land-body">
-          <p class="my-land-text">
-            Additional content text goes here.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- card 6 -->
-    <div class="col-12 col-sm-6 col-lg-4">
-      <div class="my-land-card shadow-sm">
-        <img src="https://insuranceblog.accenture.com/wp-content/uploads/2018/01/Agriculture.jpg" class="my-land-img" alt="" />
-        <div class="my-land-body">
-          <p class="my-land-text">Row two card example.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-
+    </section>
 
    
 
-
-
+<
 	<!-- Footer -->
   
     <?php 

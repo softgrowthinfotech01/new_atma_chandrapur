@@ -80,7 +80,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-4 col-sm-6 col-md-6 m-b30">
-						<a href="blog-details">
+						<a href="">
 							<div class="city-bx justify-content-center  bg-white  d-flex" style="background:url('images/blog/cotton_logo.jpeg'); background-size:cover;">
 								<div class="city-info text-center">
 							
@@ -92,7 +92,7 @@
 
 					</div>
 					<div class="col-lg-4 col-sm-6 col-md-6 m-b30">
-						<a href="blog-details-1">
+						<a href="">
 							<div class="city-bx justify-content-center  bg-white  d-flex" style="background:url('images/blog/Picture1.jpg');  background-size:cover;">
 								<div class="city-info text-center">
 							
@@ -106,7 +106,7 @@
 
 					</div>
 					<div class="col-lg-4 col-sm-6 col-md-6 m-b30">
-						<a href="blog-details-2">
+						<a href="">
 							<div class="city-bx justify-content-center  bg-white  d-flex" style="background:url('images/blog/Picture3.png');  background-size:cover;">
 								<div class="city-info text-center">
 							
@@ -120,7 +120,7 @@
 
 					</div>
 					<div class="col-lg-4 col-sm-6 col-md-6 m-b30">
-						<a href="blog-details-3">
+						<a href="">
 							<div class="city-bx justify-content-center  bg-white  d-flex" style="background:url('images/blog/Picture4.jpg');  background-size:cover;">
 								<div class="city-info text-center">
 							
@@ -134,7 +134,7 @@
 									<h6 class="pt-4 text-center" style="font-size:14px;"><b> मिरची लागवड तंत्रज्ञान  </b></h6>
 					</div>
 					<div class="col-lg-4 col-sm-6 col-md-6 m-b30">
-						<a href="blog-details-4">
+						<a href="">
 							<div class="city-bx justify-content-center  bg-white  d-flex" style="background:url('images/blog/picture16.jpg');  background-size:cover;">
 								<div class="city-info text-center">
 							

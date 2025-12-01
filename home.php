@@ -566,13 +566,21 @@
   bottom: 0;
     }
 
+     @media (max-width: 991px) {
+      .tractor_position{
+      
+  height: 201px;
+  
+    }
+    }
+
     .tractor_position_height{
        padding-bottom:200px;
     }
   </style>
 </head>
 
-<body id="bg" class="">
+<body id="bg" class="p-0">
 
   <?php
   // include "loader.php";
@@ -611,7 +619,7 @@
 
       <!-- about us -->
       <div class="content-block">
-        <div class="section-full content-inner overlay-white-middle about-section">
+        <div class="section-full content-inner overlay-white-middle about-section px-3 px-md-0">
           <div class="container">
             <div class="row">
               <!-- <div class="col-lg-12 section-head text-center">
@@ -665,7 +673,7 @@
 
               </div>
             </div>
-            <div class="row">
+            <div class="row mx-3 mx-md-0">
 
               <div class="col-lg-3 col-sm-6 col-md-6 m-b30">
                 <a href="javascript:void(0);">
@@ -756,9 +764,9 @@
                 <a href="javascript:void(0);">
                   <div class="city-bx  justify-content-center bg-white   d-flex">
                     <div class="city-info text-center">
-                      <img src="images/Icon/farmer-advice.gif" alt="farmer-advice" class="image-icon">
-                      <h6 style="font-size:14px;"><b>शेतकरी सल्ला</b></h6>
-                      <a href="farmer_consultation" class="grey"> More Details </a>
+                      <img src="images/Icon/video.gif" alt="Youtube Chanels" class="image-icon">
+                      <h6 style="font-size:14px;"><b>यूट्यूब चॅनेल</b></h6>
+                      <a href="youtubeLinks" class="grey"> More Details </a>
                       </div>
                   </div>
                 </a>
@@ -781,7 +789,7 @@
 
             <!-- Cards -->
             <div class="col-lg-6 col-12 d-flex flex-column">
-              <div class="row g-3 flex-fill">
+              <div class="row g-3 flex-fill mx-3 mx-md-0">
                 <div class="col-12 col-md-6">
                   <div class="cardz-custom">
                     <div class="text">
@@ -824,7 +832,7 @@
             <!-- Image -->
             <div class="col-lg-6 right-image ">
 
-              <img src="images/background/India_Farming.jpg"
+              <img src="images/background/tech_farm.webp"
                 class="img-fluid rounded shadow" alt="Agriculture Image">
 
             </div>
@@ -962,7 +970,7 @@
 
                 <div class="bbb_viewed_slider_container ">
 
-                  <div class="owl-carousel owl-theme bbb_viewed_slider ">
+                  <div class="owl-carousel owl-theme bbb_viewed_slider ms-5 ms-md-0">
 
                     <div class="owl-item">
                       <div

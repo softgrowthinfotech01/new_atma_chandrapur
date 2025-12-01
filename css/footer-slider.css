@@ -278,6 +278,12 @@ section
 {
     padding-top: 50px;
 }
+ @media (max-width: 991px) {
+     .bbb_viewed_slider_container
+{
+    padding-top: 25px;
+}
+    }
 .bbb_viewed_item
 {
     width: 100%;
