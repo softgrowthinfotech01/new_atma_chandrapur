@@ -15,7 +15,7 @@
 
 	.foot::before {
 		content: "";
-		background: rgba(0, 0, 0, 0.8);
+		background: rgba(0, 0, 0, 0.4);
 		display: block;
 		position: absolute;
 		width: 100%;
